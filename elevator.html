@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <title>Elevator</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script type="text/javascript" src="elevator.js"></script>
+    </head>
+    
+    <body>
+        <div id = "my-container" >
+            <div id="my-elevator">
+                <div><button data-floor="1" class="click">Floor 5</button></div>
+                <div><button data-floor="2" class="click">Floor 4</button></div>
+                <div><button data-floor="3" class="click">Floor 3</button></div>
+                <div><button data-floor="4" class="click">Floor 2</button></div>
+                <div><button data-floor="5" class="click">Floor 1</button></div>
+            </div>
+            <div><button data-floor="1" class="click-me">Floor 5</button></div>
+            <div><button data-floor="2" class="click-me">Floor 4</button></div>
+            <div><button data-floor="3" class="click-me">Floor 3</button></div>
+            <div><button data-floor="4" class="click-me">Floor 2</button></div>
+            <div><button data-floor="5" class="click-me">Floor 1</button></div>
+        </div>
+    </body>
+    
+    <style>
+      #my-container {
+        height:500px;
+        width:500px;
+      }
+      
+      #my-elevator {
+        background-color:blue;
+        height:100px;
+        width: 100px;
+        position: fixed;
+        transition: top 1s, left 1s;
+        .click
+      }
+      
+      .click-me{
+          margin-left: 200px;
+          margin-top: 120px;
+      }
+      
+      .div#my-elevator .click-me{
+          margin-top: 0;
+          margin-left: 0;
+      }
+     
+     
+    </style>
+    
+</html>
